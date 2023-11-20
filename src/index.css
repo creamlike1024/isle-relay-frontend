@@ -1,0 +1,85 @@
+/* 颜色变量 */
+:root {
+  --color-primary: #f28500;
+}
+body {
+  font-family:"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+}
+/* 整体居中 */
+.main {
+  margin: auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .main {
+      width: 67%;
+      max-width: 1024px;
+  }
+}
+span.sel {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+/* 设置 h1 的行距 */
+h1 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+h1:before {
+  content:'> ';
+  color: var(--color-primary);
+}
+h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+/* 为 h2 标签添加 # 号 */
+h2:before {
+  content:'# ';
+  color: var(--color-primary);
+  font-weight: 600;
+}
+/* 链接样式 */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+/* 当鼠标悬停在链接上时，为链接添加背景色 */
+a:hover {
+  color: white;
+  background-color: var(--color-primary);
+  transition: .2s all ease-in-out;
+}
+/* 设置 list 的行距 */
+li {
+  margin-top: 0.5em;
+}
+/* 美化代码块 */
+pre {
+  background-color: #f5f5f5;
+  border-radius: 0.5em;
+  padding: 1em;
+  overflow-x: auto;
+  overflow-y: scroll;
+  font-family: monospace;
+}
+/* 美化按钮，扁平样式 */
+button {
+  border: none;
+  margin-right: 4px;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  background-color: var(--color-primary);
+  color: white;
+  cursor: pointer;
+  transition: .2s all ease-in-out;
+}
+
+.img-icon {
+  height: 1em;
+  margin: 0 0.2em 0 0.2em;
+}
